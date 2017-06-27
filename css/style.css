@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+/********* Body ********/
+
+fieldset {
+  border: none;
+}
+
+hr {
+  height: 3px;
+  background: hotpink;
+  margin: 20px 0;
+  width: 100%;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+/********* Text ********/
+
+.page {
+  font-family: 'Crushed', sans-serif;
+  background: #ecf2f9;
+}
+
+
+h1 {
+  background: hotpink;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Sacramento', cursive;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+}
+
+p {
+  text-align: center;
+  color: grey;
+  font-size: 20px;
+}
+
+h3 {
+  color: grey;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+::-webkit-input-placeholder {
+  text-align: right;
+}
+
+legend {
+  font-size: 25px;
+  padding: 20px 0;
+  font-weight: bold;
+  
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  color: grey;
+}
+
+.left {
+  display: inline-block;
+}
+
+/********* Inputs ********/
+
+ .focus:focus, select:focus, textarea:focus {
+    background: #ffe6e6;
+    -webkit-box-shadow: inset 0 0 30px 15px #ffe6e6;
+    -moz-box-shadow: inset 0 0 30px 15px #ffe6e6;
+    box-shadow: inset 0 0 30px 15px #ffe6e6;
+
+    -webkit-transition: 500ms linear 0s;
+    -moz-transition: 500ms linear 0s;
+    -o-transition: 500ms linear 0s;
+    transition: 500ms linear 0s;
+}
+
+
+
+.top input , .top select {
+  background: white;
+  border-radius: 4px;
+  padding: 2% 2%;
+  width: 100%;
+  border-color: hotpink;
+}
+
+.top {
+  padding: 0;
+}
+
+
+
+textarea {
+  background: white;
+  border-radius: 4px;
+  height: 100px;
+  padding: 20px;
+  width: 100%;
+  border-color: hotpink;
+ 
+}
+
+button {
+  display: block;
+  background: hotpink;
+  padding: 20px 100px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Crushed', sans-serif;
+  letter-spacing: 1.5px;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
+/******** Queries ********/
+
+@media (min-width: 768px) {
+  
+  .top input , .top select {
+    display: inline-block;
+    width: 70%;
+    margin-bottom: 14px;
+  }
+  
+  .top label {
+    display: inline-block;
+    width: 29%;
+  }
+  
+  #zip {
+    width: 25%
+  }
+  
+}
